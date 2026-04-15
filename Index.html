@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Accessible Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible login Form</title>
   <link rel="stylesheet" href="Style.css">
 </head>
 <body>
     <div class="container">
 <h1>Login Form</h1>
+<main>
 <form >
     <p id="info">All fields are required</p>
     <label for="Email">Email:</label>
-    <input type="email" id="email" placeholder="Enter your email"required>
+    <input type="email" id="email" aria-describedby="info" placeholder="Enter your email" required>
     <br><br>
     <label for="Password">Password:</label>
-    <input type="password" id="password" placeholder="Enter your password" required>
+    <input type="password" id="password" aria-describedby="info" placeholder="Enter your password" required>
     <br><br>
     <button type="submit">Login</button>
 
 </form>
+</main>
 </div>
 <script src="Script.js"></script>
 </body>
